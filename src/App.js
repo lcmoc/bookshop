@@ -1,23 +1,19 @@
-import logo from './logo.svg';
 import './App.css';
+import AuthorFilter from './components/AuthorFilter'
+import Books from './components/Bookshop'
+import Counter from './components/Counter'
+import WindowWith from "./components/WindowWith";
+import GenreFilter from "./components/GenreFilter";
 
 function App() {
+
   return (
+    
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Bookshop</h1>
+      <AuthorFilter/>
+      {/* <GenreFilter/> */}
+      <Books/>
     </div>
   );
 }
